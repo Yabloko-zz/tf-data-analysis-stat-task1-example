@@ -10,6 +10,6 @@ def solution(x: np.array) -> float:
         sigma_est = np.sqrt(np.mean((np.log(X - 59)-a_est)**2))
         return a_est, sigma_est
     
-    a_est = MyLogN_Moment_Method(x)
+    a_est, sigma_est = MyLogN_Moment_Method(x)
     
     return a_est # Ваш ответ
